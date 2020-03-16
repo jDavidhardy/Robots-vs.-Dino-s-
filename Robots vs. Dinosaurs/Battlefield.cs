@@ -8,19 +8,34 @@ namespace Robots_vs.Dinosaurs
 {
     class Battlefield
     {
-        static void RunBattle()
+        public Herd herd;
+        public Fleet fleet;
+        public Battlefield()
         {
-            Dinosaur dinotype = new Dinosaur("Tyrannosaurus Rex", 20);  //  public Herd(string dinotype, int atkpow)
-            dinotype.Attack();                                                           //needs robot names
-
-            Dinosaur dinotype = new Dinosaur("Spinosaurus", 25);        //  public Herd(string dinotype, int atkpow)
-            dinotype.Attack();                                                           //needs robot names
-
-            Dinosaur dinotype = new Dinosaur("Carnotaurus", 15);        //  public Herd(string dinotype, int atkpow)
-            dinotype.Attack();                                                           //needs robot names
-
-                                                                        //  Bring over from Robot/Fleet class --> public Robot(string robotName, int atkpow, string weaponType)  like same as above from dino herd.
+            herd = new Herd();
+            fleet = new Fleet();
         }
+        public void attack1()
+        {
 
+
+
+            //int response = int.Parse(Console.ReadLine());
+       
+            //herd.dinoHerd[response].Attack(fleet.robotFleet[response]);
+            //while(response > 0)
+            //{
+            //    herd.dinoHerd.RemoveAt(0);
+            //    Console.WriteLine();
+            //}
+            //List<string> dinoHerd = new List<string> { "Tyrannosaurus Rex ", "Spinosaurus", "Carnotaurus" };
+
+            //foreach (string Dinosaur in dinoHerd)
+            //{
+            //    Console.WriteLine(Dinosaur);
+            //}
+        }
     }
+
 }
+

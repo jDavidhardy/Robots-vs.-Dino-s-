@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Robots_vs.Dinosaurs
 {
-    class Weapons
+    public class Weapons
     {
+        public int weaponPower;
+        public string weaponType;
+        public Weapons(string weaponType, int atkpow)
+        {
+            this.weaponPower = atkpow;
+            this.weaponType = weaponType;
+        }
     }
 }

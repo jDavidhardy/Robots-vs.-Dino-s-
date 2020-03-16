@@ -8,7 +8,7 @@ using UnitsNet;
 
 namespace Robots_vs.Dinosaurs
 {
-    class Dinosaur
+    public class Dinosaur
     {
         //member variables
         public int health;
@@ -26,11 +26,11 @@ namespace Robots_vs.Dinosaurs
         }
 
 
-        // member methods
+        //member methods
         public void Attack(Robot robotName)
         {
             robotName.health -= attackPower;
         }
-      
+
     }
 }
