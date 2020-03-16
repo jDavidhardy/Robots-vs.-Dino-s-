@@ -14,7 +14,7 @@ namespace Robots_vs.Dinosaurs
         public int health;
         public int energy;
         public int attackPower;
-        string type;
+        public string type;
 
         //constructor
         public Dinosaur(string dinotype, int atkpow)
@@ -22,8 +22,7 @@ namespace Robots_vs.Dinosaurs
             health = 100;
             energy = 100;
             attackPower = atkpow;
-            this.type = dinotype;
-            
+            this.type = dinotype; 
         }
 
 
@@ -32,6 +31,6 @@ namespace Robots_vs.Dinosaurs
         {
             robotName.health -= attackPower;
         }
-               
+      
     }
 }

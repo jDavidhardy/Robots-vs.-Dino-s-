@@ -13,22 +13,23 @@ namespace Robots_vs.Dinosaurs
         public int health;
         public int powerLevel;
         public int attackPower;
-        string name;
-        string weaponType;
+        public string name;
+        public string weapon;
 
         //constructor
-        public Robot(string robotName, int atkpow)
+        public Robot(string robotName, int atkpow, string weaponType)
         {
             health = 100;
             powerLevel = 100;
             attackPower = atkpow;
-            this.name = robotName;
+            name = robotName;
+            weapon = weaponType;
 
         }
 
-
-        // member methods
-        public void Attack(Dinosaur dinotype)
+       
+    // member methods
+    public void Attack(Dinosaur dinotype)
         {
             dinotype.health -= attackPower;
         }
