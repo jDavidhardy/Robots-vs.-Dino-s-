@@ -17,25 +17,28 @@ namespace Robots_vs.Dinosaurs
         }
         public void attack1()
         {
+            Console.WriteLine("Select your class: Enter 1 for Dinosaurs & Enter 2 for Robots.");
+            int Answer1 = int.Parse(Console.ReadLine());
 
+            if (Answer1 == 1)
+            {
+                Console.WriteLine("You are in the Herd.");
+            }
 
+            else
+            {
+                Console.WriteLine("You are in the Fleet.");
+            }
+            Console.ReadLine();
+        }
 
-            //int response = int.Parse(Console.ReadLine());
-       
-            //herd.dinoHerd[response].Attack(fleet.robotFleet[response]);
-            //while(response > 0)
-            //{
-            //    herd.dinoHerd.RemoveAt(0);
-            //    Console.WriteLine();
-            //}
-            //List<string> dinoHerd = new List<string> { "Tyrannosaurus Rex ", "Spinosaurus", "Carnotaurus" };
+        public void Battle()
+        {
+            Console.WriteLine("Welcome to the Battlefield");
+            Console.ReadLine();
 
-            //foreach (string Dinosaur in dinoHerd)
-            //{
-            //    Console.WriteLine(Dinosaur);
-            //}
+            attack1();
+
         }
     }
-
 }
-
