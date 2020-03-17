@@ -11,7 +11,7 @@ namespace Robots_vs.Dinosaurs
         static void Main(string[] args)
         {
             Battlefield sim = new Battlefield();
-            sim.Battle();
+            sim.Battle();             // .(dot) Notation to call an object
         }
     }
 }

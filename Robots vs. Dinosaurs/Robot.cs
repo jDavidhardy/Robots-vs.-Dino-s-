@@ -9,7 +9,7 @@ namespace Robots_vs.Dinosaurs
     public class Robot
     {
 
-        //member variables
+        //member variables   (has a)
         public int health;
         public int powerLevel;
         public string name;
@@ -27,11 +27,11 @@ namespace Robots_vs.Dinosaurs
         }
 
 
-        // member methods
+        // member methods (can do)
         public void Attack(Dinosaur dinotype)
         {
 
-            dinotype.health -= weapon.weaponPower;
+            dinotype.health -= weapon.weaponPower;        // Short-Hand way, little slower than the Long-Hand way. 
         }
     }
 }

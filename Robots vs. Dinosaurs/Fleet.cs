@@ -19,9 +19,9 @@ namespace Robots_vs.Dinosaurs
             robotName1 = new Robot("Maximillion", "Bite Force" , 50);            
             robotName2 = new Robot("Malachi", "Cloak" , 10);                
             robotName3 = new Robot("Gethin", "Hook Claw" , 25);     
-            robotFleet.Add(robotName1);
-            robotFleet.Add(robotName2);
-            robotFleet.Add(robotName3);
+            robotFleet.Add(robotName1);                    // .(dot) Notation
+            robotFleet.Add(robotName2);                    // .(dot) Notation
+            robotFleet.Add(robotName3);                    // .(dot) Notation
         }
 
         ////member variables
